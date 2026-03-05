@@ -1,4 +1,4 @@
-FROM pandoc/latex:3@sha256:f99dd53faf558d18ed707291c88502c0378c09a12df93727a1a53cb50d851102
+FROM pandoc/latex:3@sha256:d63ee681927ed692e03f07822848b7e5741de4467c1e7411f08ba352a07f394f
 
 RUN apk --update --no-cache add make perl fontconfig jq nodejs \
   && tlmgr update --self --all \
